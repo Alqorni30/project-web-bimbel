@@ -1,0 +1,48 @@
+body{
+    height: 2370px;
+    font-family: 'Poppins', sans-serif;
+}
+nav span{
+    color: #3dbaf9;
+    letter-spacing: 1px;
+    
+}
+.jumbotron{
+    padding-top: 6rem;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+}
+.jumbotron img{
+    border-radius: 80px;
+}
+.jumbotron span{
+    color: #3dbaf9;
+}
+
+section{
+    padding-top: 5rem;
+}
+nav{
+    background-color: rgb(0, 40, 93);
+}
+.nav-link :hover{
+    background-color: #3dbaf9;
+}
+#program{
+    background-color: rgb(0, 40, 93);
+}
+.card1{
+    background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+    color: white;
+}
+.btn-primary{
+    background-color: #3dbaf9;
+}
+footer{
+    background-color: rgb(0, 40, 93);
+}
+footer a{
+    font-size: 30px;
+    padding: 10px;
+}
