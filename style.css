@@ -2,6 +2,9 @@ body{
     height: 2370px;
     font-family: 'Poppins', sans-serif;
 }
+link{
+    display: none;
+}
 nav span{
     color: #3dbaf9;
     letter-spacing: 1px;
@@ -35,9 +38,6 @@ nav{
     background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
     background-size: cover;
     color: white;
-}
-.btn-primary{
-    background-color: #3dbaf9;
 }
 footer{
     background-color: rgb(0, 40, 93);

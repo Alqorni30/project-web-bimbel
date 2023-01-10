@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>belajar bootstrap</title>
+    <title>Bimbel AllClass</title>
+    <link rel="icon" href="img/icon.jpg" type="image/-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
@@ -63,7 +64,7 @@
             <div>
               <p>Anda dapat memilih program dan mengatur<br> jumlah pertemuan sesuai kebutuhan Putra-Putri anda.</p>
             </div>
-            <a href="#program" class="btn btn-primary" role="button">LIHAT PROGRAM</a>
+            <a href="#program" class="btn btn-primary " role="button">LIHAT PROGRAM</a>
           </div>
 
           <div class="col-md-6">
@@ -120,7 +121,7 @@
               <div class="card-body card1">
                 <h5 class="card-title">SEKOLAH DASAR<br>(I-IV)</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">MULAI BIMBEL YUK!</a>
+                <a href="#kontak" class="btn btn-primary">MULAI BIMBEL YUK!</a>
               </div>
             </div>
           </div>
@@ -129,7 +130,7 @@
               <div class="card-body card1">
                 <h5 class="card-title">SEKOLAH MENENGAH PERTAMA(VII,VIII,IX)</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">MULAI BIMBEL YUK!</a>
+                <a href="#kontak" class="btn btn-primary">MULAI BIMBEL YUK!</a>
               </div>
             </div>
           </div>
@@ -138,7 +139,7 @@
               <div class="card-body card1">
                 <h5 class="card-title">SEKOLAH MENENGAH ATAS(X,XI,XII)</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">MULAI BIMBEL YUK!</a>
+                <a href="#kontak" class="btn btn-primary">MULAI BIMBEL YUK!</a>
               </div>
             </div>
           </div>
@@ -147,7 +148,7 @@
               <div class="card-body card1">
                 <h5 class="card-title">KELAS ALUMNI(GAP YEAR)</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">MULAI BIMBEL YUK!</a>
+                <a href="#kontak" class="btn btn-primary">MULAI BIMBEL YUK!</a>
               </div>
             </div>
           </div>      
@@ -162,7 +163,7 @@
                       <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     </svg>
                     <h5 class="card-title">Program Private</h5>
-                    <p class="card-text">Siswa belajar personal dengan techer. 1 techer untuk 1 siswa.</p>
+                    <p class="card-text">Siswa belajar personal dengan teacher. 1 teacher untuk 1 siswa.</p>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -208,7 +209,7 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>kontak</h2>
+            <h2 class="fw-bold" >kontak</h2>
           </div>
         </div>
         <div class="row">
@@ -246,8 +247,8 @@
                     </svg>
                   </div>
                   <div class="col-11">
-                    <h6>Kak Terri : 083746374638</h6>
-                    <h6>Kak Suci :086578438734</h6>
+                    <h6>Kak Txxx : 08XXXXXXXXXX</h6>
+                    <h6>Kak xxxx : 08XXXXXXXXXX</h6>
                   </div>
               <li>
                 <div class="row mt-3">
@@ -265,13 +266,18 @@
             </ul>
           </div>
           <div class="col-md-6">
-            <form action="">
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Terima kasih!</strong> Pesan anda sudah kami terkirim.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="pesan-contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
+                  name="nama"
                   aria-describedby="name"
                 />
               </div>
@@ -281,14 +287,20 @@
                   type="email"
                   class="form-control"
                   id="email"
+                  name="email"
                   aria-describedby="email"
                 />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="pesan" placeholder="Silahkan kalau mau bertanya!" name="pesan" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -307,5 +319,7 @@
     </footer>
     <!-- akhir footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="contact.js"></script>
   </body>
 </html>
